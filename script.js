@@ -68,6 +68,7 @@ function startQuiz(){
 function showQuestion(){
     resetQuestion();
     document.querySelector("#quiz-app h1").style.display="none";
+    document.querySelector(".title-bar span").style.display="block";
     document.querySelector(".title-bar span").innerHTML=`${currentQuestionIndex+1}/${questions.length} `;
     let question=questions[currentQuestionIndex];
     questionTitle.innerHTML=`${currentQuestionIndex+1}. ${question.question}`;
